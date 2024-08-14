@@ -1,0 +1,270 @@
+/* Garantir que o gradiente cubra toda a altura da página */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #CCD6FF, #FFFFFF);
+    background-repeat: no-repeat;
+    font-family: 'poppins';
+    
+}
+@font-face {
+    font-family: 'poppins';
+    src: url(Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'poppins2';
+    src: url(Poppins/Poppins-Bold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Seção sojackie para o fundo */
+.sojackie {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1000px;
+    height: 582px;
+    background-image: url(jackie-chan.png);
+    background-size: auto 100%;
+    background-position: right top;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+/* Estilizar e posicionar o cabeçalho */
+header {
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 3; /* Para estar acima dos outros conteúdos */
+}
+
+header {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo-container {
+    margin-right: 20px;
+}
+
+.logoJackie {
+    width: 100px;
+    height: auto;
+    margin-left: 53px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 35px;
+    font-family: 'poppins2';
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Estilizar a linha divisória */
+.divider {
+    border: none;
+    border-top: 6px solid #21388E;
+    margin-top: 20px;
+    width: 100%;
+    z-index: 1; /* Definindo z-index menor que o do cabeçalho */
+}
+
+/* Definir a imagem do Jackie Chan como fundo da seção .hero */
+.hero {
+    position: relative;
+    padding: 100px 20px;
+    z-index: 2;
+    margin-left: 100px;
+}
+
+.hero-text {
+    max-width: 40%;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 2;
+    position: relative;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #21388E;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero-text .btn {
+    padding: 10px 20px;
+    background-color: #21388E;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Ajustes nas notícias */
+.news {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o conteúdo no centro */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    gap: 20px; /* Espaçamento entre a imagem e o conteúdo */
+    padding: 40px 20px;
+}
+
+.news-content {
+    max-width: 60%; /* Limita a largura do conteúdo */
+    text-align: left;
+}
+
+.news-content p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.news-item img {
+    width: 300px; /* Ajuste conforme necessário */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilizar o rodapé */
+footer {
+    background-color: #000;
+    color: #FFF;
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-logo img {
+    max-width: 140px;
+    margin-bottom: 20px;
+    margin-top: 90px;
+    margin-left: 30px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links div {
+    margin-right: 50px;
+}
+
+.footer-links h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact {
+    max-width: 300px;
+}
+
+.social-links {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.social-links ul {
+    margin-right: 15px;
+}
+
+.social-links ul img {
+    max-width: 20px;
+}
+
+.subscribe {
+    display: flex;
+}
+
+.subscribe input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    flex: 1;
+}
+
+.subscribe button {
+    padding: 10px;
+    background-color: #2C2F7B;
+    color: #FFF;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.subscribe button:hover {
+    background-color: #1A1B61;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+}
+
+
+
+/* Definir a imagem do Jackie Chan no topo da página */
+.JackieP {
+    position: absolute;
+    top: 0; /* Alinha o topo da imagem com o topo da página */
+    right: 0; /* Alinha o lado direito da imagem com o lado direito da página */
+    width: 739px; /* Ajuste conforme necessário */
+    height: auto; /* Ajuste conforme necessário */
+    z-index: -1; /* Opcional: coloca a imagem atrás dos outros elementos */
+    margin-top: 0; /* Ajuste conforme necessário */
+}
+
+
+
